@@ -3,42 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>German Lavalle</title>
-    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/styles.css">
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <header>
-        <section>
-            <a href="../index.html"><img id="persona" src="../imagenes/PERSONA.jpg" alt="Mi Foto" id="mifoto"></a>
-        </section>
-        <nav>
-            <ul id="navi">
-                <li><a href="../index.html">Sobre mi</a></li>
-                <li><a href="../html/educacion.html">Educacion</a></li>
-                <li class="current_page"><a href="../html/experiencia.html">Experiencia</a></li>
-                <li><a href="../html/habilidades.html">Habilidades</a></li>
-                <li><a href="../html/contacto.html">Contacto</a></li>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="logo-nombre d-flex flex-column align-items-center justify-content-center">
+          <a class="navbar-brand" href="../index.html"><img class="navbar-logo" src="../imagenes/PERSONA.jpg" alt="foto personal"></a> 
+          <a href="../index.html" class="nombre"><h1>Lavalle Germán</h1></a>
+        </div>
+        <div class="navbar" >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Sobre Mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="educacion.html">Educación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="experiencia.html">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-    </header>   
-    <section id="experiencia">
-        <img src="../imagenes/nordic.png" alt="Neo Nordic">
-        <p>Neo Nordic S.A.</p>
-        <P>2021 - Actualidad</P>
-        <p>Desempeño actividades en el area de quimica y control de procesos</p>
-        <img src="../imagenes/silar.jpg" alt="Silar Mecanizados">
-        <p>2018-2021</p>
-        <p>Desempeñé actividades de administrativo y control de la producción. Tomé el rol de supervisor de calidad durante 1 año al hacer una suplencia</p>
-        <img src="../imagenes/valleespora.png" alt="Valle Espora Construcciones">
-        <p>2016-2028</p>
-        <p>Atencion al público y asesoramiento respecto a los distintos materiales. Atencion de consultas y asesoramiento de índole técnica respecto a posibles procesos productivos.</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    </header>
+
+      <section class="cartas d-flex flex-wrap gap-2 m-2 justify-content-center">
+
+      <div class="card text-center" style="width: 18rem;">
+        <img src="../imagenes/nordic.jpg" class="card-img-top" alt="Protesis Quirurgicas Nordic">
+        <div class="card-body">
+          <h5 class="card-title">Neo Nordic</h5>
+          <p class="card-text">2021-Actualidad <br> Desempeño actividades en el area de quimica y control de procesos</p>
+          <a href="https://www.neonordic.com.ar" class="btn btn-primary" target="_blank">Web Neo Nordic</a>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;">
+        <img src="../imagenes/silar.jpg" class="card-img-top" alt="Silar Mecanizados">
+        <div class="card-body">
+          <h5 class="card-title">Silar Mecanizados</h5>
+          <p class="card-text">2018-2021 <br> Desempeñé actividades de administrativo y control de la producción. Tomé el rol de supervisor de calidad durante 1 año al hacer una suplencia</p>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;">
+        <img src="../imagenes/valleespora.jpg" class="card-img-top" alt="Valle Espora Construcciones">
+        <div class="card-body">
+          <h5 class="card-title">Valle Espora Construcciones</h5>
+          <p class="card-text">2016-2018 <br> Atencion al público y asesoramiento respecto a los distintos materiales. Atencion de consultas y asesoramiento de índole técnica respecto a posibles procesos productivos.</p>
+
+        </div>
+      </div>
+
     </section>
+
     <footer>
-        <a href="http://www.whatsapp.com" target="_blank"><img src="../imagenes/whatsapp.png" alt="Whatsapp"></a>
-        <a href="http://www.instagram.com" target="_blank"><img src="../imagenes/instagram.png" alt="Instagram"></a>
-        <a href="http://www.linkedin.com" target="_blank"><img src="../imagenes/linkedin.png" alt="Linkedin"></a>
-        <a href="http://www.gmail.com" target="_blank"><img src="../imagenes/email.png" alt="Email"></a>
+      <a href="http://www.whatsapp.com" target="_blank"><img src="../imagenes/whatsapp.png" alt="Whatsapp"></a>
+      <a href="http://www.instagram.com" target="_blank"><img src="../imagenes/instagram.png" alt="Instagram"></a>
+      <a href="http://www.linkedin.com" target="_blank"><img src="../imagenes/linkedin.png" alt="Linkedin"></a>
+      <a href="http://www.gmail.com" target="_blank"><img src="../imagenes/email.png" alt="Email"></a>
     </footer>
+
+
 </body>
 </html>
