@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Lavalle</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+
+    <header>
+        <section>
+            <a href="../index.html"><img id="persona" src="../imagenes/PERSONA.jpg" alt="Mi Foto" id="mifoto"></a>
+        </section>
+        <nav>
+            <ul id="navi">
+                <li><a href="../index.html">Sobre mi</a></li>
+                <li><a href="../html/educacion.html">Educacion</a></li>
+                <li><a href="../html/experiencia.html">Experiencia</a></li>
+                <li><a href="../html/habilidades.html">Habilidades</a></li>
+                <li class="current_page"><a href="../html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <form action=form.php method="post">    <!--No tengo definido el form.php no me va a andar el submit-->
+        
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Juan" required>
+      
+        <label for="apellido">Apellido</label><br>
+        <input type="text" name="apellido" placeholder="Gonzalez" required>
+      
+        <label for="celular">Celular:</label><br>
+        <input type="tel" name="celular" placeholder="11xxxxxxxx" required>
+      
+        <label for="email">Email</label><br>
+        <input type="email" name="email" placeholder="direcion@correo.com" required>
+      
+        <label for="motivo">Motivo de consulta</label>
+
+        <select id="motivo" name="motivo" required>
+          <option value="Consulta">Consulta</option>
+          <option value="Comentario">Comentario</option>
+          <option value="Sugerencia">Sugerencia</option>
+        </select>
+      
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" placeholder="Deja aquí tu mensaje."></textarea>
+      
+        <input type="submit" value="Enviar">
+      </form>
+
+
+    <footer>
+        <a href="http://www.whatsapp.com" target="_blank"><img src="../imagenes/whatsapp.png" alt="Whatsapp"></a>
+        <a href="http://www.instagram.com" target="_blank"><img src="../imagenes/instagram.png" alt="Instagram"></a>
+        <a href="http://www.linkedin.com" target="_blank"><img src="../imagenes/linkedin.png" alt="Linkedin"></a>
+        <a href="http://www.gmail.com" target="_blank"><img src="../imagenes/email.png" alt="Email"></a>
+    </footer>
+    
+</body>
+</html>
