@@ -45,7 +45,7 @@ h1{
     text-align: center;
     margin: 15px;
     padding: 10px;
-    box-shadow: 0px 0px 5px 1px #468189 ;
+    box-shadow: 0px 0px 5px 1px #468189 ; /*lo igualo a las card que puse con bootstrap en otras paginas*/
 }
 
 .habilidad img {
