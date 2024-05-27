@@ -1,0 +1,147 @@
+.nombre,
+.nombre:hover,
+.nombre:visited {
+  text-decoration: none;
+  color: #F4E9CD;
+}
+
+.logo-nombre {
+  margin: 0.5rem;
+}
+.logo-nombre img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.container-fluid {
+  background-color: #468189;
+  font-size: 1.1rem;
+}
+
+.navbar-toggler {
+  background-color: #77aca2;
+}
+.navbar-toggler:hover {
+  background-color: #6a9890;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.habilidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px 1px #468189; /*lo igualo a las card que puse con bootstrap en otras paginas*/
+}
+.habilidad img {
+  width: 200px;
+  height: 200px;
+}
+.habilidad p {
+  max-width: 200px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/*------- FOOTER -------------*/
+footer {
+  background-color: #468189;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  width: 100%;
+  height: 70px;
+  flex: 1;
+}
+footer img {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.1rem;
+  margin: 2rem 0.5rem 0.5rem 0;
+}
+
+.texto-home {
+  margin: 4rem;
+}
+
+.plantaindustrial {
+  width: 100%;
+}
+
+.whatsapp-flotante {
+  position: fixed;
+  bottom: 13px;
+  left: 5px;
+}
+
+.whatsapp-flotante img {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 400px) {
+  .whatsapp-flotante {
+    display: none;
+  }
+}
+.card-text,
+.fotoytextogrande,
+.card-title {
+  text-align: center;
+}
+
+.card-body p {
+  margin: 0.5rem 1rem;
+}
+.card-body h5 {
+  margin-top: 1rem;
+}
+
+.card {
+  margin: 1rem;
+  border: none;
+  box-shadow: 0px 0px 5px 1px #468189;
+}
+.card img {
+  padding: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

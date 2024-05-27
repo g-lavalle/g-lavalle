@@ -1,0 +1,38 @@
+.nombre,
+.nombre:hover,
+.nombre:visited {
+    text-decoration: none;
+    color: #F4E9CD;
+}
+
+.logo-nombre {
+    margin: 0.5rem;
+
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+.container-fluid {
+    background-color: #468189;
+    font-size: 1.1rem;
+}
+
+.navbar-toggler {
+    background-color: #77aca2;
+
+    &:hover {
+        background-color: #6a9890;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.navbar-logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
