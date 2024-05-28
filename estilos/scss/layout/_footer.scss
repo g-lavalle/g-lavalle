@@ -1,16 +1,18 @@
 /*------- FOOTER -------------*/
 footer{
-    background-color: #468189;
+    background-color: $bg-color;
     display: flex;
     justify-content: flex-end;
-    align-items: end;
-    width: 100%;
-    height: 70px;
+    align-items:end;
+    @include sizes(100%,70px);
     flex: 1;
+
     img{
-        width: 2rem;
-        height: 2rem;
-        padding: 0.1rem;
-        margin: 2rem 0.5rem 0.5rem 0;
+        @include sizes(2rem,2rem);
+        @include margin-padding(2rem 0.5rem 0.5rem 0, 0.1rem);
+        &:hover{
+            transform: scale(1.25);
+            transition: 100ms ease-out;
+        }
     }
 }

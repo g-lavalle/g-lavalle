@@ -1,3 +1,23 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .nombre,
 .nombre:hover,
 .nombre:visited {
@@ -29,55 +49,9 @@
 }
 
 .navbar-logo {
-  height: 50px;
   width: 50px;
+  height: 50px;
   border-radius: 50%;
-}
-
-.habilidades {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-}
-
-.habilidad {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 15px;
-  padding: 10px;
-  box-shadow: 0px 0px 5px 1px #468189; /*lo igualo a las card que puse con bootstrap en otras paginas*/
-}
-.habilidad img {
-  width: 200px;
-  height: 200px;
-}
-.habilidad p {
-  max-width: 200px;
-  text-align: center;
-  margin-top: 12px;
-}
-
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 1.2rem;
-  font-weight: 700;
 }
 
 /*------- FOOTER -------------*/
@@ -93,8 +67,12 @@ footer {
 footer img {
   width: 2rem;
   height: 2rem;
-  padding: 0.1rem;
   margin: 2rem 0.5rem 0.5rem 0;
+  padding: 0.1rem;
+}
+footer img:hover {
+  transform: scale(1.25);
+  transition: 100ms ease-out;
 }
 
 .texto-home {
@@ -105,16 +83,52 @@ footer img {
   width: 100%;
 }
 
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  z-index: -9999;
+}
+.habilidades .habilidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px 1px #468189; /*lo igualo a las card que puse con bootstrap en otras paginas*/
+}
+.habilidades .habilidad img {
+  width: 200px;
+  height: 200px;
+}
+.habilidades .habilidad p {
+  max-width: 200px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.formulario-contacto {
+  margin: 0;
+  padding: 0 6rem 0 6rem;
+}
+
 .whatsapp-flotante {
   position: fixed;
   bottom: 13px;
   left: 5px;
+  z-index: 99999;
 }
 
 .whatsapp-flotante img {
   width: 3rem;
   height: 3rem;
   margin-left: 5px;
+}
+.whatsapp-flotante img:hover {
+  transform: scale(1.15) rotate(20deg);
+  transition: 200ms ease-out;
 }
 
 @media screen and (max-width: 400px) {
@@ -139,6 +153,7 @@ footer img {
   margin: 1rem;
   border: none;
   box-shadow: 0px 0px 5px 1px #468189;
+  z-index: -999;
 }
 .card img {
   padding: 1.5rem;

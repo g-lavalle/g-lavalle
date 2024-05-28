@@ -1,8 +1,14 @@
-@import"layout/_header";
-@import"pages/_habilidades";
+@import"base/_mixins";
+@import"base/_variables";
 @import"base/_reset";
+
+@import"layout/_header";
 @import"layout/_footer";
+
 @import"pages/_sobre-mi";
+@import"pages/_habilidades";
+@import"pages/_contacto";
+
 @import"componentes/_whatsapp-flotante";
 @import"componentes/_media-whatsapp-400";
 @import"componentes/_cards";

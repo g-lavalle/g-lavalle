@@ -2,10 +2,14 @@
     position: fixed;
     bottom: 13px;
     left: 5px;
+    z-index: 99999;
 }
 
 .whatsapp-flotante img{
-    width: 3rem;
-    height: 3rem;
+    @include sizes(3rem,3rem);
     margin-left: 5px;
+    &:hover{
+        transform: scale(1.15) rotate(20deg);
+        transition: 200ms ease-out;
+    }
 }
